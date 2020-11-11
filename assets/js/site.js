@@ -4,6 +4,16 @@
 // they will not permanently attach to the window
 // object):
 
+// Example of using try/catch to handle errors;
+// there is no function called
+// `callingANonExistantFunction()`, but this will
+// allow JavaScript to keep on truckin'
+try {
+  callingANonExistantFunction();
+} catch(error) {
+  console.error("Oh man, it didn't work:", error);
+}
+
 (function() {
   console.log("I am immediately invoked!");
 
