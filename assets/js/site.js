@@ -1,3 +1,15 @@
+// IIFE: Immediately Invoked Function Expression
+
+(function() {
+  console.log("I am immediately invoked!");
+  var fruit = "Apple";
+  var alert = "OMG RUN!!!";
+  alert('Hey, here is an alert');
+})();
+
+var vegetable = "Carrot";
+
+
 console.log("I am JavaScript. HEAR ME ROAR!");
 
 function omgClicked(event) {
