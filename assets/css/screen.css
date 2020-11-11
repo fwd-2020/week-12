@@ -12,3 +12,12 @@ h1 {
   font-weight: bold;
   font-size: 72px;
 }
+
+.nojs h1 {
+  color: red;
+}
+
+.js h1 {
+  color: blue;
+  cursor: pointer;
+}

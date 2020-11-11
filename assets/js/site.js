@@ -15,9 +15,16 @@ try {
 }
 
 (function() {
+
   console.log("I am immediately invoked!");
 
   console.log("I am JavaScript. HEAR ME ROAR!");
+
+  function detectJavaScript() {
+    var doc = document.querySelector('html');
+    doc.classList.add('js'); // Add the js class
+    doc.classList.remove('nojs'); // Remove the nojs class
+  }
 
   function omgClicked(element,message) {
     return function(event) {
@@ -26,6 +33,8 @@ try {
   }
 
   document.addEventListener('DOMContentLoaded', function() {
+
+    detectJavaScript();
 
     var heading = document.querySelector('h1');
     heading.innerText = "Hello from DOM-Ready JavaScript!";
